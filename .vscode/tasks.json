@@ -6,25 +6,19 @@
     {
       "label": "build",
       "type": "shell",
-      "command": "./build.sh",
-      "windows": {
-        "command": ".\\build.cmd"
-      },
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
+      "command": "hugo --minify --cleanDestinationDir",
+      "group": "build",
       "problemMatcher": []
     },
     {
       "label": "serve",
       "type": "shell",
-      "command": "./serve.sh",
-      "windows": {
-        "command": ".\\serve.cmd"
-      },
-      "group": "build",
+      "command": "hugo server --disableFastRender",
       "isBackground": true,
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
       "problemMatcher": {
         "severity": "error",
         "fileLocation": "absolute",

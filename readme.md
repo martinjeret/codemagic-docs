@@ -35,7 +35,7 @@ Layout templates are in `layouts` in ACE format instead of HTML ([documentation]
 
 Preview the site in http://localhost:1313/ by launching:
 ```
-./serve.sh
+hugo server
 ```
 
 It will usually refresh automatically when anything is changed
