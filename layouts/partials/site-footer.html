@@ -1,0 +1,7 @@
+{{ partial "script" "js/main.js" }}
+{{ partial "script" "js/fuse.js" }}
+{{ partial "script" "js/search.js" }}
+
+<script>
+  window.pageSearch.init('{{ (site.Home.OutputFormats.Get "json").RelPermalink }}')
+</script>
